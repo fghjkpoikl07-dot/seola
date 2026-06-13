@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seola Yun - My Journey & Lifestyle Portfolio</title>
+    <!-- Modern Typography: Outfit & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Premium Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Animated Blobs -->
+    <div class="bg-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="header-container">
+            <a href="#" class="logo">Seola<span>.</span></a>
+            <nav class="nav-links">
+                <a href="#about" class="nav-link"><i class="fa-regular fa-user"></i> About</a>
+                <a href="#favorites" class="nav-link"><i class="fa-regular fa-heart"></i> Favorites & Pet</a>
+                <a href="#philosophy" class="nav-link"><i class="fa-regular fa-compass"></i> Philosophy</a>
+                <a href="#moments" class="nav-link highlight-btn"><i class="fa-solid fa-camera"></i> Life & Socials</a>
+            </nav>
+            <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-container">
+                <div class="hero-text-content">
+                    <span class="badge">Welcome to my space</span>
+                    <h1 class="hero-title">Hello, I'm <span class="gradient-text">Seola Yun</span></h1>
+                    <p class="hero-description">
+                        A <span class="highlight-word" data-word="challenging">challenging</span> and <span class="highlight-word" data-word="impressive">impressive</span> 22-year-old student from South Korea who is eagerly <span class="highlight-word" data-word="looking forward">looking forward</span> to her dreams.
+                    </p>
+                    
+                    <div class="hero-actions">
+                        <a href="#moments" class="btn btn-primary"><i class="fa-solid fa-images"></i> Explore My Moments</a>
+                        <button id="tts-hero-btn" class="btn btn-secondary">
+                            <i class="fa-solid fa-volume-high"></i> Listen to Intro
+                        </button>
+                    </div>
+                </div>
+                <div class="hero-image-container">
+                    <div class="image-wrapper">
+                        <img src="seola_photo.jpg" alt="Seola Yun" class="hero-img">
+                        <div class="floating-badge badge-poodle">
+                            <i class="fa-solid fa-dog"></i> Poodle Lover
+                        </div>
+                        <div class="floating-badge badge-dream">
+                            <i class="fa-solid fa-star"></i> Dream Chaser
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="about-section">
+            <div class="section-header">
+                <span class="section-subtitle">My Story</span>
+                <h2 class="section-title">Who is Seola?</h2>
+            </div>
+            
+            <div class="about-grid">
+                <!-- Info Cards -->
+                <div class="info-card age-card">
+                    <div class="card-icon"><i class="fa-solid fa-cake-candles"></i></div>
+                    <h3>22 Years Old</h3>
+                    <p>Living and learning with passion at the age of potential.</p>
+                </div>
+                
+                <div class="info-card location-card">
+                    <div class="card-icon"><i class="fa-solid fa-map-pin"></i></div>
+                    <h3>From South Korea</h3>
+                    <p>Proudly roots from Korea, bringing a global perspective.</p>
+                </div>
+
+                <div class="info-card uni-card">
+                    <div class="card-icon"><i class="fa-solid fa-school"></i></div>
+                    <h3>Studying at JBNU</h3>
+                    <p>Jeonbuk National University, broadening horizons day by day.</p>
+                </div>
+            </div>
+
+            <!-- Transition Timeline Card -->
+            <div class="transition-container">
+                <div class="transition-card">
+                    <div class="transition-header">
+                        <h3>Academic Transformation</h3>
+                        <span class="badge badge-warning">Big Step</span>
+                    </div>
+                    <div class="transition-flow">
+                        <div class="flow-step">
+                            <div class="flow-icon flow-nurse"><i class="fa-solid fa-user-nurse"></i></div>
+                            <h4>Nursing Student</h4>
+                            <p>Studying health and medical care with dedication.</p>
+                        </div>
+                        <div class="flow-arrow">
+                            <i class="fa-solid fa-right-long"></i>
+                            <span class="arrow-text">Exchanged Department</span>
+                        </div>
+                        <div class="flow-step active">
+                            <div class="flow-icon flow-animal"><i class="fa-solid fa-paw"></i></div>
+                            <h4>Animal Science</h4>
+                            <p>Following natural passion for animals & veterinary science.</p>
+                        </div>
+                    </div>
+                    <p class="transition-caption">
+                        "I was a nurse student, but I <span class="highlight-word" data-word="exchange">exchanged</span> my department to animal science. I'm still looking forward to my dream!"
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Favorites & Petting Section -->
+        <section id="favorites" class="favorites-section">
+            <div class="section-header">
+                <span class="section-subtitle">Lifestyle</span>
+                <h2 class="section-title">Likes, Dislikes & Pet</h2>
+            </div>
+
+            <div class="favorites-grid">
+                <!-- Likes Card -->
+                <div class="fav-card likes-card">
+                    <h3>Things I Love</h3>
+                    <ul class="likes-list">
+                        <li>
+                            <span class="bullet pink-dot"></span>
+                            <div class="like-info">
+                                <strong>Light Pink</strong>
+                                <p>My ultimate favorite color. It represents warmth, soft dreams, and creativity.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="bullet fruit-dot"></span>
+                            <div class="like-info">
+                                <strong>Fruits</strong>
+                                <p>Sweet, fresh, and healthy. I can eat them all day long!</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="bullet travel-dot"></span>
+                            <div class="like-info">
+                                <strong>Travel</strong>
+                                <p>Exploring new horizons, experiencing cultures, and finding inspiration.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="bullet animal-dot"></span>
+                            <div class="like-info">
+                                <strong>Animals</strong>
+                                <p>All creatures! Changing my major to Animal Science was driven by this love.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Pet Poodle Simulator Card -->
+                <div class="fav-card poodle-card">
+                    <div class="poodle-widget">
+                        <h3>Pet My Dog! 🐩</h3>
+                        <p>I have a little dog, a sweet poodle. Give him a pet and make him happy!</p>
+                        
+                        <div class="poodle-simulator">
+                            <div class="poodle-sprite-container">
+                                <!-- Interactive Dog Face/Body SVG -->
+                                <img src="poodle_photo.jpg" class="poodle-avatar" alt="Seola's Poodle">
+                                <div class="pet-heart-particles"></div>
+                            </div>
+                            <div class="poodle-bubble" id="poodle-speech">Woof! Hello! *wag wag*</div>
+                            <button id="pet-btn" class="btn btn-accent"><i class="fa-solid fa-hand-sparkles"></i> Pet Poodle</button>
+                        </div>
+                        <div class="pet-counter-display">Happiness Level: <span id="pet-count">0</span>%</div>
+                    </div>
+                </div>
+
+                <!-- Dislike Card (Olive) -->
+                <div class="fav-card dislike-card">
+                    <div class="dislike-header">
+                        <div class="dislike-icon"><i class="fa-solid fa-circle-xmark"></i></div>
+                        <h3>The Only Dislike</h3>
+                    </div>
+                    <div class="dislike-body">
+                        <div class="olive-container">
+                            <span class="olive-emoji">🫒</span>
+                            <span class="no-symbol">🚫</span>
+                        </div>
+                        <h4>"I hate raw olives."</h4>
+                        <p>No green, bitter, raw olives for Seola, please! A fun, quirky food fact that makes her unique.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Philosophy Section -->
+        <section id="philosophy" class="philosophy-section">
+            <div class="section-header">
+                <span class="section-subtitle">Values & Dreams</span>
+                <h2 class="section-title">My Philosophy of Life</h2>
+            </div>
+
+            <!-- Quote Carousel -->
+            <div class="carousel-container">
+                <div class="carousel-track" id="carousel-track">
+                    
+                    <div class="carousel-slide active">
+                        <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                        <p class="quote-text">"I want to be someone who loves their own life."</p>
+                        <span class="quote-label">Self-Love & Appreciation</span>
+                    </div>
+
+                    <div class="carousel-slide">
+                        <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                        <p class="quote-text">"I want to be a real adult."</p>
+                        <span class="quote-label">Maturity & Growth</span>
+                    </div>
+
+                    <div class="carousel-slide">
+                        <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                        <p class="quote-text">"I don't know what I do, but I'm a challenging and impressive person."</p>
+                        <span class="quote-label">Confidence & Experimentation</span>
+                    </div>
+
+                    <div class="carousel-slide">
+                        <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                        <p class="quote-text">"I want to work at what I love and what can improve myself."</p>
+                        <span class="quote-label">Career & Personal Growth</span>
+                    </div>
+
+                </div>
+
+                <div class="carousel-controls">
+                    <button class="control-btn prev-btn" id="prev-quote"><i class="fa-solid fa-chevron-left"></i></button>
+                    <div class="carousel-indicators" id="carousel-indicators">
+                        <!-- Dynamically filled or static -->
+                        <span class="indicator active" data-slide="0"></span>
+                        <span class="indicator" data-slide="1"></span>
+                        <span class="indicator" data-slide="2"></span>
+                        <span class="indicator" data-slide="3"></span>
+                    </div>
+                    <button class="control-btn next-btn" id="next-quote"><i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- My Moments & Socials Section -->
+        <section id="moments" class="moments-section">
+            <div class="section-header">
+                <span class="section-subtitle">My Lifestyle</span>
+                <h2 class="section-title">My Moments & Socials</h2>
+                <p class="section-description">Take a peek into my daily routine, checked-off goals, and my Instagram space @u0._.n7!</p>
+            </div>
+
+            <!-- Lifestyle Tab Navigation -->
+            <div class="lifestyle-tab-header">
+                <button class="life-tab-btn active" data-life-tab="instagram"><i class="fa-brands fa-instagram"></i> Instagram Feed</button>
+                <button class="life-tab-btn" data-life-tab="timeline"><i class="fa-regular fa-clock"></i> A Day in My Life</button>
+                <button class="life-tab-btn" data-life-tab="bucketlist"><i class="fa-solid fa-list-check"></i> Bucket List</button>
+            </div>
+
+            <!-- Lifestyle Contents -->
+            <div class="lifestyle-contents">
+                
+                <!-- Tab 1: Mock Instagram Feed -->
+                <div class="life-tab-content active" id="life-instagram">
+                    <div class="instagram-container">
+                        <!-- Instagram Profile Header -->
+                        <div class="insta-profile-header">
+                            <div class="insta-avatar-container">
+                                <img src="seola_photo.jpg" alt="Seola Yun" class="insta-profile-avatar">
+                            </div>
+                            <div class="insta-profile-info">
+                                <div class="insta-username-row">
+                                    <h3 class="insta-username">u0._.n7</h3>
+                                    <a href="https://www.instagram.com/u0._.n7" target="_blank" rel="noopener noreferrer" class="btn btn-insta-follow"><i class="fa-brands fa-instagram"></i> Follow</a>
+                                </div>
+                                <div class="insta-stats">
+                                    <span><strong>6</strong> posts</span>
+                                    <span><strong>1,000</strong> followers</span>
+                                    <span><strong>200</strong> following</span>
+                                </div>
+                                <div class="insta-bio">
+                                    <strong>윤설아 (Seola Yun)</strong>
+                                    <p>🐾 Studying Animal Science at JBNU</p>
+                                    <p>🌸 Pink color lover | Fruit eater 🍓</p>
+                                    <p>✈️ Travel enthusiast | Living with my poodle 🐩</p>
+                                    <p class="insta-link"><i class="fa-solid fa-link"></i> <a href="https://www.instagram.com/u0._.n7" target="_blank">instagram.com/u0._.n7</a></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Instagram Posts Grid -->
+                        <div class="insta-grid" id="insta-posts-grid">
+                            <!-- JS will inject posts here dynamically for richer interaction -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab 2: Day in My Life Timeline -->
+                <div class="life-tab-content" id="life-timeline">
+                    <div class="timeline-container">
+                        <div class="timeline-toggle-wrapper">
+                            <button class="timeline-toggle-btn active" id="btn-weekday">Academic Weekday</button>
+                            <button class="timeline-toggle-btn" id="btn-weekend">Relaxing Weekend</button>
+                        </div>
+                        <div class="timeline-flow-vertical" id="timeline-flow-list">
+                            <!-- JS will inject timeline steps here -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab 3: Bucket List -->
+                <div class="life-tab-content" id="life-bucketlist">
+                    <div class="bucket-container">
+                        <div class="bucket-progress-wrapper">
+                            <span class="progress-title">Lifestyle Goals Reached</span>
+                            <div class="progress-bar-outer">
+                                <div class="progress-bar-inner" id="bucket-progress-bar" style="width: 60%;"></div>
+                            </div>
+                            <span class="progress-percentage" id="bucket-progress-text">60% Completed</span>
+                        </div>
+                        
+                        <div class="bucket-list" id="bucket-list-items">
+                            <!-- JS will inject bucket items here -->
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Instagram Detail Modal -->
+        <div id="insta-modal" class="insta-modal hidden">
+            <div class="insta-modal-overlay"></div>
+            <div class="insta-modal-card">
+                <button class="insta-modal-close" id="close-modal-btn"><i class="fa-solid fa-xmark"></i></button>
+                <div class="insta-modal-body">
+                    <div class="insta-modal-image-col">
+                        <img src="" alt="Post image" id="modal-post-img">
+                        <div class="double-tap-heart-overlay" id="double-tap-heart">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="insta-modal-info-col">
+                        <div class="insta-modal-header">
+                            <img src="seola_photo.jpg" alt="Profile avatar" class="insta-modal-avatar">
+                            <div class="insta-modal-user-details">
+                                <span class="insta-modal-username">u0._.n7</span>
+                                <span class="insta-modal-location" id="modal-post-location">Seoul, South Korea</span>
+                            </div>
+                        </div>
+                        <div class="insta-modal-comments-area">
+                            <div class="insta-modal-caption-row">
+                                <strong class="comment-user">u0._.n7</strong>
+                                <span class="comment-text" id="modal-post-caption">This is the caption!</span>
+                            </div>
+                            <div class="insta-modal-comments-list" id="modal-post-comments">
+                                <!-- Comments will be loaded here -->
+                            </div>
+                        </div>
+                        <div class="insta-modal-actions">
+                            <div class="action-buttons-row">
+                                <button class="action-btn" id="modal-like-btn"><i class="fa-regular fa-heart"></i></button>
+                                <button class="action-btn"><i class="fa-regular fa-comment"></i></button>
+                                <button class="action-btn"><i class="fa-regular fa-paper-plane"></i></button>
+                            </div>
+                            <div class="likes-count-row">
+                                <span id="modal-likes-count">124 likes</span>
+                            </div>
+                            <div class="date-row">
+                                <span id="modal-post-date">JUNE 2</span>
+                            </div>
+                        </div>
+                        <div class="insta-modal-input-row">
+                            <input type="text" placeholder="Add a comment..." id="new-comment-input">
+                            <button id="post-comment-btn">Post</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2026 Seola Yun. Created with <i class="fa-solid fa-heart pink-heart"></i> for Personal Branding & Life Portfolio.</p>
+            <p class="footer-sub">Designed using HTML, CSS & Vanilla JavaScript. Built in workspace: AI로하는영어학습-앱코딩</p>
+        </div>
+    </footer>
+
+    <!-- Custom Script -->
+    <script src="app.js"></script>
+</body>
+</html>
